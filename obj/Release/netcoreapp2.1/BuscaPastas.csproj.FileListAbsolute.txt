@@ -1,0 +1,10 @@
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\bin\Release\netcoreapp2.1\BuscaPastas.deps.json
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\bin\Release\netcoreapp2.1\BuscaPastas.runtimeconfig.json
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\bin\Release\netcoreapp2.1\BuscaPastas.runtimeconfig.dev.json
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\bin\Release\netcoreapp2.1\BuscaPastas.dll
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\bin\Release\netcoreapp2.1\BuscaPastas.pdb
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\obj\Release\netcoreapp2.1\BuscaPastas.csproj.CoreCompileInputs.cache
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\obj\Release\netcoreapp2.1\BuscaPastas.AssemblyInfoInputs.cache
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\obj\Release\netcoreapp2.1\BuscaPastas.AssemblyInfo.cs
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\obj\Release\netcoreapp2.1\BuscaPastas.dll
+C:\Users\Netlex\source\repos\ConsoleApp1\ConsoleApp1\obj\Release\netcoreapp2.1\BuscaPastas.pdb

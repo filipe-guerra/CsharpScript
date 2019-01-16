@@ -193,6 +193,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.Office.Interop.Word/15.0.4797.1003": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Word.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Word.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -553,6 +562,18 @@
         "version.txt"
       ]
     },
+    "Microsoft.Office.Interop.Word/15.0.4797.1003": {
+      "sha512": "J8Et7cMnQTlB4oBh70f8drHQr0kB9jWp3d6tgvrs9eDb+8G/Aq83JGgCODSC6IW21Mu7w5otzfsWU8q7wnehGw==",
+      "type": "package",
+      "path": "microsoft.office.interop.word/15.0.4797.1003",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Microsoft.Office.Interop.Word.dll",
+        "microsoft.office.interop.word.15.0.4797.1003.nupkg.sha512",
+        "microsoft.office.interop.word.nuspec"
+      ]
+    },
     "NETStandard.Library/2.0.3": {
       "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
@@ -684,7 +705,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Microsoft.Office.Interop.Word >= 15.0.4797.1003"
     ]
   },
   "packageFolders": {
@@ -732,6 +754,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.Office.Interop.Word": {
+            "target": "Package",
+            "version": "[15.0.4797.1003, )"
           }
         },
         "imports": [
@@ -741,5 +767,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Microsoft.Office.Interop.Word 15.0.4797.1003' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v2.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Microsoft.Office.Interop.Word",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-
+using Word = Microsoft.Office.Interop.Word;
 
 namespace BuscaPastas
 {
@@ -19,11 +19,13 @@ namespace BuscaPastas
             foreach (string path in directories)
             {
                 if (File.Exists(path))
-                {   // This path is a file
+                {
+                    // This path is a file
                     RecursiveFileProcessor.ProcessFile(path);
                 }
                 else if (Directory.Exists(path))
-                {   // This path is a directory
+                {
+                    // This path is a directory
                     RecursiveFileProcessor.ProcessDirectory(path);
                 }
                 else
@@ -67,6 +69,7 @@ namespace BuscaPastas
 
     public class RecursiveFileProcessor
     {
+        //static Word.Document doc = new Word.Document();
         // Process all files in the directory passed in, recurse on any directories 
         // that are found, and process the files they contain.
         public static void ProcessDirectory(string targetDirectory)
@@ -86,6 +89,31 @@ namespace BuscaPastas
         public static void ProcessFile(string path)
         {
             Console.WriteLine("Processed file '{0}'.", path);
+
+            try {
+                Word.Application application = new Word.Application();
+                Word.Document document = application.Documents.Open(path);
+                Word.Range rng = document.Content;
+                rng.Select();
+                Console.WriteLine(rng.Text);
+
+                // Loop through all words in the document.
+                /*int count = document.Words.Count;
+                for (int i = 1; i <= count; i++)
+                {
+                    // Write the word.
+                    string text = document.Words[i].Text;
+                    Console.WriteLine("Word {0} = {1}", i, text);
+                }*/
+                // Close word.
+
+                application.Quit();
+                
+            }
+            catch (InvalidCastException e)
+            {
+            }
+            
         }
     }
 }
